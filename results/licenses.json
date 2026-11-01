@@ -1,0 +1,81 @@
+{
+  "dependencies": {
+    "httpx": {},
+    "matplotlib": {},
+    "numpy": {},
+    "pyarrow": {},
+    "scikit-learn": {},
+    "scipy": {},
+    "websockets": {}
+  },
+  "models": {
+    "deepseek-ai/DeepSeek-V4.1-Flash": {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "licence": "mit",
+      "licence_name": null,
+      "licence_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+      "licence_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/314113f8a7dadb388215396ba5fbee2c610a04d6/LICENSE",
+      "revision": "314113f8a7dadb388215396ba5fbee2c610a04d6",
+      "source": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash"
+    },
+    "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16": {
+      "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "licence": "other",
+      "licence_name": "openmdw-1.1",
+      "licence_sha256": "2ab44b68365473c112f5092211a38f231cb23e50de68b75a13369adbd76a74df",
+      "licence_url": "https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1",
+      "revision": "77df655d5e9f8362164ed14dd8b48f8bce657498",
+      "source": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+    },
+    "openai/gpt-oss-20b": {
+      "id": "openai/gpt-oss-20b",
+      "licence": "apache-2.0",
+      "licence_name": null,
+      "licence_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "licence_url": "https://huggingface.co/openai/gpt-oss-20b/resolve/6cee5e81ee83917806bbde320786a8fb61efebee/LICENSE",
+      "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+      "source": "https://huggingface.co/api/models/openai/gpt-oss-20b"
+    },
+    "zai-org/GLM-5.3": {
+      "id": "zai-org/GLM-5.3",
+      "licence": "other",
+      "licence_name": "glm-5.3",
+      "licence_sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c",
+      "licence_url": "https://huggingface.co/zai-org/GLM-5.3/resolve/ba32f8c19c8738e2c57c71798c601d477a7bf844/LICENSE",
+      "revision": "ba32f8c19c8738e2c57c71798c601d477a7bf844",
+      "source": "https://huggingface.co/api/models/zai-org/GLM-5.3"
+    },
+    "zai-org/GLM-5.3-Flash": {
+      "id": "zai-org/GLM-5.3-Flash",
+      "licence": "mit",
+      "licence_name": null,
+      "licence_sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+      "licence_url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/LICENSE",
+      "revision": "46a050bec13002ad29ee795c16e61cf4fa3c4a9c",
+      "source": "https://huggingface.co/api/models/zai-org/GLM-5.3-Flash"
+    }
+  },
+  "provenance": {
+    "command": "uv run python scripts/export_public.py TARGET",
+    "model_revision": "frozen local fits; hosted aliases not immutable",
+    "scope": "author-computed aggregates; no observations, responses or personal metadata",
+    "seed": 42,
+    "source_commit": "8b687f36cb4c89d4f621c27369e9d456fdcaba22",
+    "source_sha256": {
+      "results/deadlines.json": "85db0ad1e71e66a6256775a685c8d256af157dd70c18c1672df4a77904290a92",
+      "results/evidence-status.json": "0118960a83451cb0ae6431e95de0a89d320b801acd55313df73075cfc0b76db0",
+      "results/expanded-cohort.json": "6149a258cf6f38ac231b6fa3850358c007a6d5bb29f7b04b534145cd73398831",
+      "results/expanded-verify.json": "b571a28b97a0b9a63684c1174916754d0138b1689252be2e245eda8718891c0e",
+      "results/forward-diagnostics.json": "114a56775e5bd3290ba1eff07205b577655bd79f230603fd02178ca9914cdd06",
+      "results/jev-evaluate-probe.json": "b5d005126e272cbf3e3a51cf59f81d7c9eda2c2567b2fa25280f1555091bb35c",
+      "results/licenses.json": "909bca2365f4409667f94212a14bf47577887cdb352802290aef499421b7c444",
+      "results/nim-low-analysis.json": "3354755187e6dbca76e3431445727f1beb06a6f18b5a3f873add31d4e3894df5",
+      "results/nim-tilt-analysis.json": "16ded572f8abff242bbcf10244b6cb32f3ebcdaf1158f884ad4eea5616288181",
+      "results/opencode-analysis.json": "d87b75e33566c07daeb68bb719476a634048cc45cc553bd735877160fae28e63",
+      "results/review-offline.json": "ff9b1e3f409c5fd4c12a7d3c94f1ecb3a40bed8a90847bea3b7f8003b5ec81dc",
+      "results/review-pilot.json": "286e5c2d770298f701522686b973192877a2b30dbe8b1a255ea208e2695a92e9",
+      "results/tilt-model-licenses.json": "89dc158e9d359cd12a028a1b007137ab710c11edb225997b1c36963d6c2efec8",
+      "results/verification.json": "9b8e11d18c89c2da57de2f6109f4bbb5244685bf8106dee47492831ef5c55822"
+    }
+  }
+}

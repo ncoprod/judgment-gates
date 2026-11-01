@@ -1,0 +1,2412 @@
+{
+  "nim-low-analysis": {
+    "models": {
+      "deepseek-ai/deepseek-v4.1-flash": {
+        "latency": {
+          "failed": 3,
+          "logical_successful_rows": 0,
+          "n": 0,
+          "p50_ms": null,
+          "p99_ms": null
+        },
+        "neutral_n": 0,
+        "status": "not_run",
+        "tilt": {}
+      },
+      "nvidia/nemotron-3-ultra-550b-a55b": {
+        "calibration": {
+          "brier": 0.9603999999999999,
+          "ece": 0.98,
+          "n": 1,
+          "prevalence": 1.0,
+          "reliability": [
+            {
+              "frequency": 1.0,
+              "lower": 0.0,
+              "n": 1,
+              "probability": 0.02,
+              "upper": 0.1
+            },
+            {
+              "frequency": null,
+              "lower": 0.1,
+              "n": 0,
+              "probability": null,
+              "upper": 0.2
+            },
+            {
+              "frequency": null,
+              "lower": 0.2,
+              "n": 0,
+              "probability": null,
+              "upper": 0.3
+            },
+            {
+              "frequency": null,
+              "lower": 0.3,
+              "n": 0,
+              "probability": null,
+              "upper": 0.4
+            },
+            {
+              "frequency": null,
+              "lower": 0.4,
+              "n": 0,
+              "probability": null,
+              "upper": 0.5
+            },
+            {
+              "frequency": null,
+              "lower": 0.5,
+              "n": 0,
+              "probability": null,
+              "upper": 0.6
+            },
+            {
+              "frequency": null,
+              "lower": 0.6,
+              "n": 0,
+              "probability": null,
+              "upper": 0.7
+            },
+            {
+              "frequency": null,
+              "lower": 0.7,
+              "n": 0,
+              "probability": null,
+              "upper": 0.8
+            },
+            {
+              "frequency": null,
+              "lower": 0.8,
+              "n": 0,
+              "probability": null,
+              "upper": 0.9
+            },
+            {
+              "frequency": null,
+              "lower": 0.9,
+              "n": 0,
+              "probability": null,
+              "upper": 1.0
+            }
+          ]
+        },
+        "latency": {
+          "failed": 4,
+          "logical_successful_rows": 5,
+          "n": 5,
+          "p50_ms": 32264.929834,
+          "p99_ms": 51028.76746864
+        },
+        "neutral_n": 1,
+        "status": "ok",
+        "tilt": {
+          "drawdown": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.13,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.13,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "loss": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.030000000000000002,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.030000000000000002,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "morning": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 0,
+              "ci": null,
+              "mean": null,
+              "n": 0,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 0,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 0,
+              "ci": null,
+              "mean": null,
+              "n": 0,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 0,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 0,
+              "ci": null,
+              "mean": null,
+              "n": 0,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 0,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "neutral_repeat": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "night": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 0,
+              "ci": null,
+              "mean": null,
+              "n": 0,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 0,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 0,
+              "ci": null,
+              "mean": null,
+              "n": 0,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 0,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 0,
+              "ci": null,
+              "mean": null,
+              "n": 0,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 0,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "win": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          }
+        }
+      },
+      "openai/gpt-oss-20b": {
+        "calibration": {
+          "brier": 0.581341,
+          "ece": 0.6455,
+          "n": 4,
+          "prevalence": 0.25,
+          "reliability": [
+            {
+              "frequency": 0.5,
+              "lower": 0.0,
+              "n": 2,
+              "probability": 0.004,
+              "upper": 0.1
+            },
+            {
+              "frequency": null,
+              "lower": 0.1,
+              "n": 0,
+              "probability": null,
+              "upper": 0.2
+            },
+            {
+              "frequency": null,
+              "lower": 0.2,
+              "n": 0,
+              "probability": null,
+              "upper": 0.3
+            },
+            {
+              "frequency": null,
+              "lower": 0.3,
+              "n": 0,
+              "probability": null,
+              "upper": 0.4
+            },
+            {
+              "frequency": null,
+              "lower": 0.4,
+              "n": 0,
+              "probability": null,
+              "upper": 0.5
+            },
+            {
+              "frequency": null,
+              "lower": 0.5,
+              "n": 0,
+              "probability": null,
+              "upper": 0.6
+            },
+            {
+              "frequency": 0.0,
+              "lower": 0.6,
+              "n": 1,
+              "probability": 0.62,
+              "upper": 0.7
+            },
+            {
+              "frequency": null,
+              "lower": 0.7,
+              "n": 0,
+              "probability": null,
+              "upper": 0.8
+            },
+            {
+              "frequency": null,
+              "lower": 0.8,
+              "n": 0,
+              "probability": null,
+              "upper": 0.9
+            },
+            {
+              "frequency": 0.0,
+              "lower": 0.9,
+              "n": 1,
+              "probability": 0.97,
+              "upper": 1.0
+            }
+          ]
+        },
+        "latency": {
+          "failed": 5,
+          "logical_successful_rows": 26,
+          "n": 26,
+          "p50_ms": 16387.202354,
+          "p99_ms": 124343.270333
+        },
+        "neutral_n": 4,
+        "status": "ok",
+        "tilt": {
+          "drawdown": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.46799500000000005,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.14100000000000001,
+                  0.7954925
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.5,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  1.0
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": -0.32699500000000004,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.7949900000000001,
+                  0.14100000000000001
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "loss": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.026666666666666655,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.07999999999999996
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": -0.026666666666666655,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.07999999999999996,
+                  0.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "morning": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.024999999999999994,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.05999999999999997
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.024999999999999994,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.05999999999999997
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "neutral_repeat": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.267545,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.00010000000000000026,
+                  0.7275349999999999
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.25,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.75
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": -0.217445,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.7274349999999999,
+                  0.07499999999999998
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "night": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.2066663333333333,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.619999
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.3333333333333333,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  1.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": -0.2066663333333333,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.619999,
+                  0.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "win": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.313,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.005,
+                  0.664
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.25,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.75
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": -0.128,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.659,
+                  0.27
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          }
+        }
+      },
+      "z-ai/glm-5.3-flash": {
+        "latency": {
+          "failed": 3,
+          "logical_successful_rows": 0,
+          "n": 0,
+          "p50_ms": null,
+          "p99_ms": null
+        },
+        "neutral_n": 0,
+        "status": "not_run",
+        "tilt": {}
+      }
+    }
+  },
+  "nim-tilt-analysis": {
+    "models": {
+      "deepseek-ai/deepseek-v4.1-flash": {
+        "latency": {
+          "failed": 3,
+          "logical_successful_rows": 0,
+          "n": 0,
+          "p50_ms": null,
+          "p99_ms": null
+        },
+        "neutral_n": 0,
+        "status": "not_run",
+        "tilt": {}
+      },
+      "google/gemma-4-31b-it": {
+        "latency": {
+          "failed": 3,
+          "logical_successful_rows": 0,
+          "n": 0,
+          "p50_ms": null,
+          "p99_ms": null
+        },
+        "neutral_n": 0,
+        "status": "not_run",
+        "tilt": {}
+      },
+      "minimaxai/minimax-m3.1-flash": {
+        "latency": {
+          "failed": 3,
+          "logical_successful_rows": 0,
+          "n": 0,
+          "p50_ms": null,
+          "p99_ms": null
+        },
+        "neutral_n": 0,
+        "status": "not_run",
+        "tilt": {}
+      },
+      "nvidia/nemotron-3-ultra-550b-a55b": {
+        "calibration": {
+          "brier": 0.4817666666666667,
+          "ece": 0.6366666666666667,
+          "n": 3,
+          "prevalence": 0.6666666666666666,
+          "reliability": [
+            {
+              "frequency": 1.0,
+              "lower": 0.0,
+              "n": 1,
+              "probability": 0.0,
+              "upper": 0.1
+            },
+            {
+              "frequency": null,
+              "lower": 0.1,
+              "n": 0,
+              "probability": null,
+              "upper": 0.2
+            },
+            {
+              "frequency": null,
+              "lower": 0.2,
+              "n": 0,
+              "probability": null,
+              "upper": 0.3
+            },
+            {
+              "frequency": 0.0,
+              "lower": 0.3,
+              "n": 1,
+              "probability": 0.33,
+              "upper": 0.4
+            },
+            {
+              "frequency": 1.0,
+              "lower": 0.4,
+              "n": 1,
+              "probability": 0.42,
+              "upper": 0.5
+            },
+            {
+              "frequency": null,
+              "lower": 0.5,
+              "n": 0,
+              "probability": null,
+              "upper": 0.6
+            },
+            {
+              "frequency": null,
+              "lower": 0.6,
+              "n": 0,
+              "probability": null,
+              "upper": 0.7
+            },
+            {
+              "frequency": null,
+              "lower": 0.7,
+              "n": 0,
+              "probability": null,
+              "upper": 0.8
+            },
+            {
+              "frequency": null,
+              "lower": 0.8,
+              "n": 0,
+              "probability": null,
+              "upper": 0.9
+            },
+            {
+              "frequency": null,
+              "lower": 0.9,
+              "n": 0,
+              "probability": null,
+              "upper": 1.0
+            }
+          ]
+        },
+        "latency": {
+          "failed": 1,
+          "logical_successful_rows": 27,
+          "n": 27,
+          "p50_ms": 12740.246,
+          "p99_ms": 26442.915619999992
+        },
+        "neutral_n": 3,
+        "status": "ok",
+        "tilt": {
+          "drawdown": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.036666666666666674,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.08
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.01666666666666666,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.030000000000000027,
+                  0.08
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "loss": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.010000000000000009,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.030000000000000027
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.010000000000000009,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.030000000000000027
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "morning": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.11633333333333334,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.329
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": -0.103,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.329,
+                  0.020000000000000018
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "neutral_repeat": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.02333333333333333,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.04999999999999999
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": -0.009999999999999997,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.04999999999999999,
+                  0.02
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "night": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.03666666666666668,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.010000000000000009,
+                  0.07
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.00999999999999999,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.030000000000000027,
+                  0.07
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "win": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.013333333333333343,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.01,
+                  0.020000000000000018
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.013333333333333343,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.01,
+                  0.020000000000000018
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          }
+        }
+      },
+      "nvidia/nemotron-3.5-lightning-30b-a3b": {
+        "latency": {
+          "failed": 3,
+          "logical_successful_rows": 0,
+          "n": 0,
+          "p50_ms": null,
+          "p99_ms": null
+        },
+        "neutral_n": 0,
+        "status": "not_run",
+        "tilt": {}
+      },
+      "openai/gpt-oss-20b": {
+        "calibration": {
+          "brier": 0.73562025,
+          "ece": 0.74275,
+          "n": 4,
+          "prevalence": 0.75,
+          "reliability": [
+            {
+              "frequency": 0.75,
+              "lower": 0.0,
+              "n": 4,
+              "probability": 0.0072499999999999995,
+              "upper": 0.1
+            },
+            {
+              "frequency": null,
+              "lower": 0.1,
+              "n": 0,
+              "probability": null,
+              "upper": 0.2
+            },
+            {
+              "frequency": null,
+              "lower": 0.2,
+              "n": 0,
+              "probability": null,
+              "upper": 0.3
+            },
+            {
+              "frequency": null,
+              "lower": 0.3,
+              "n": 0,
+              "probability": null,
+              "upper": 0.4
+            },
+            {
+              "frequency": null,
+              "lower": 0.4,
+              "n": 0,
+              "probability": null,
+              "upper": 0.5
+            },
+            {
+              "frequency": null,
+              "lower": 0.5,
+              "n": 0,
+              "probability": null,
+              "upper": 0.6
+            },
+            {
+              "frequency": null,
+              "lower": 0.6,
+              "n": 0,
+              "probability": null,
+              "upper": 0.7
+            },
+            {
+              "frequency": null,
+              "lower": 0.7,
+              "n": 0,
+              "probability": null,
+              "upper": 0.8
+            },
+            {
+              "frequency": null,
+              "lower": 0.8,
+              "n": 0,
+              "probability": null,
+              "upper": 0.9
+            },
+            {
+              "frequency": null,
+              "lower": 0.9,
+              "n": 0,
+              "probability": null,
+              "upper": 1.0
+            }
+          ]
+        },
+        "latency": {
+          "failed": 1,
+          "logical_successful_rows": 27,
+          "n": 27,
+          "p50_ms": 8123.424,
+          "p99_ms": 22303.849299999998
+        },
+        "neutral_n": 4,
+        "status": "ok",
+        "tilt": {
+          "drawdown": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.23275,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.4655
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.25,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.75
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.23275,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.4655
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "loss": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.18610002499999997,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  5e-08,
+                  0.5580000249999999
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.25,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.75
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.185900025,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.00029997499999999947,
+                  0.558
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "morning": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.119,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.357
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.119,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.357
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "neutral_repeat": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0675,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.005,
+                  0.13
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0625,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.005,
+                  0.13
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "night": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.1069,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.32
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.1069,
+              "n": 3,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.32
+                ],
+                "n": 3,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "win": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.09989999999999999,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.29924999999999996
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0996,
+              "n": 4,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.0004499999999999999,
+                  0.29924999999999996
+                ],
+                "n": 4,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          }
+        }
+      },
+      "z-ai/glm-5.3": {
+        "latency": {
+          "failed": 3,
+          "logical_successful_rows": 0,
+          "n": 0,
+          "p50_ms": null,
+          "p99_ms": null
+        },
+        "neutral_n": 0,
+        "status": "not_run",
+        "tilt": {}
+      },
+      "z-ai/glm-5.3-flash": {
+        "latency": {
+          "failed": 3,
+          "logical_successful_rows": 0,
+          "n": 0,
+          "p50_ms": null,
+          "p99_ms": null
+        },
+        "neutral_n": 0,
+        "status": "not_run",
+        "tilt": {}
+      }
+    }
+  },
+  "opencode-analysis": {
+    "models": {
+      "opencode/deepseek-v4.1-flash-free": {
+        "latency": {
+          "failed": 30,
+          "logical_successful_rows": 0,
+          "n": 0,
+          "p50_ms": null,
+          "p99_ms": null
+        },
+        "neutral_n": 0,
+        "status": "not_run",
+        "tilt": {}
+      },
+      "opencode/glm-5.3-flash-free": {
+        "calibration": {
+          "brier": 0.006333333333333334,
+          "ece": 0.07333333333333333,
+          "n": 3,
+          "prevalence": 0.0,
+          "reliability": [
+            {
+              "frequency": 0.0,
+              "lower": 0.0,
+              "n": 2,
+              "probability": 0.06,
+              "upper": 0.1
+            },
+            {
+              "frequency": 0.0,
+              "lower": 0.1,
+              "n": 1,
+              "probability": 0.1,
+              "upper": 0.2
+            },
+            {
+              "frequency": null,
+              "lower": 0.2,
+              "n": 0,
+              "probability": null,
+              "upper": 0.3
+            },
+            {
+              "frequency": null,
+              "lower": 0.3,
+              "n": 0,
+              "probability": null,
+              "upper": 0.4
+            },
+            {
+              "frequency": null,
+              "lower": 0.4,
+              "n": 0,
+              "probability": null,
+              "upper": 0.5
+            },
+            {
+              "frequency": null,
+              "lower": 0.5,
+              "n": 0,
+              "probability": null,
+              "upper": 0.6
+            },
+            {
+              "frequency": null,
+              "lower": 0.6,
+              "n": 0,
+              "probability": null,
+              "upper": 0.7
+            },
+            {
+              "frequency": null,
+              "lower": 0.7,
+              "n": 0,
+              "probability": null,
+              "upper": 0.8
+            },
+            {
+              "frequency": null,
+              "lower": 0.8,
+              "n": 0,
+              "probability": null,
+              "upper": 0.9
+            },
+            {
+              "frequency": null,
+              "lower": 0.9,
+              "n": 0,
+              "probability": null,
+              "upper": 1.0
+            }
+          ]
+        },
+        "latency": {
+          "failed": 36,
+          "logical_successful_rows": 20,
+          "n": 20,
+          "p50_ms": 7158.907874500001,
+          "p99_ms": 21934.940421249998
+        },
+        "neutral_n": 3,
+        "status": "ok",
+        "tilt": {
+          "drawdown": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.46,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.020000000000000004,
+                  0.9
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.5,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  1.0
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.44,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  -0.020000000000000004,
+                  0.9
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "loss": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "morning": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.020000000000000004,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.020000000000000004,
+              "n": 1,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 1,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "neutral_repeat": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.015,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.010000000000000009,
+                  0.01999999999999999
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.015,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.010000000000000009,
+                  0.01999999999999999
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "night": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 0,
+              "ci": null,
+              "mean": null,
+              "n": 0,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 0,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 0,
+              "ci": null,
+              "mean": null,
+              "n": 0,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 0,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 0,
+              "ci": null,
+              "mean": null,
+              "n": 0,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": null,
+                "n": 0,
+                "reason": "fewer than two paired states",
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          },
+          "win": {
+            "absolute_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.14,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.009999999999999995,
+                  0.27
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "decision_flip_fraction": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.0,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            },
+            "signed_probability_shift": {
+              "block": "hour",
+              "blocks": 1,
+              "ci": null,
+              "mean": 0.14,
+              "n": 2,
+              "paired_state_bootstrap": {
+                "alpha": 0.05,
+                "ci": [
+                  0.009999999999999995,
+                  0.27
+                ],
+                "n": 2,
+                "repetitions": 2000,
+                "scope": "descriptive conditional-cohort interval; assumes exchangeable state pairs; does not establish time-series or population precision and has no multiplicity correction",
+                "seed": 42,
+                "unit": "paired market state"
+              },
+              "reason": "fewer than five UTC blocks; precision is not established"
+            }
+          }
+        }
+      }
+    }
+  },
+  "provenance": {
+    "command": "uv run python scripts/export_public.py TARGET",
+    "model_revision": "frozen local fits; hosted aliases not immutable",
+    "scope": "author-computed aggregates; no observations, responses or personal metadata",
+    "seed": 42,
+    "source_commit": "8b687f36cb4c89d4f621c27369e9d456fdcaba22",
+    "source_sha256": {
+      "results/deadlines.json": "85db0ad1e71e66a6256775a685c8d256af157dd70c18c1672df4a77904290a92",
+      "results/evidence-status.json": "0118960a83451cb0ae6431e95de0a89d320b801acd55313df73075cfc0b76db0",
+      "results/expanded-cohort.json": "6149a258cf6f38ac231b6fa3850358c007a6d5bb29f7b04b534145cd73398831",
+      "results/expanded-verify.json": "b571a28b97a0b9a63684c1174916754d0138b1689252be2e245eda8718891c0e",
+      "results/forward-diagnostics.json": "114a56775e5bd3290ba1eff07205b577655bd79f230603fd02178ca9914cdd06",
+      "results/jev-evaluate-probe.json": "b5d005126e272cbf3e3a51cf59f81d7c9eda2c2567b2fa25280f1555091bb35c",
+      "results/licenses.json": "909bca2365f4409667f94212a14bf47577887cdb352802290aef499421b7c444",
+      "results/nim-low-analysis.json": "3354755187e6dbca76e3431445727f1beb06a6f18b5a3f873add31d4e3894df5",
+      "results/nim-tilt-analysis.json": "16ded572f8abff242bbcf10244b6cb32f3ebcdaf1158f884ad4eea5616288181",
+      "results/opencode-analysis.json": "d87b75e33566c07daeb68bb719476a634048cc45cc553bd735877160fae28e63",
+      "results/review-offline.json": "ff9b1e3f409c5fd4c12a7d3c94f1ecb3a40bed8a90847bea3b7f8003b5ec81dc",
+      "results/review-pilot.json": "286e5c2d770298f701522686b973192877a2b30dbe8b1a255ea208e2695a92e9",
+      "results/tilt-model-licenses.json": "89dc158e9d359cd12a028a1b007137ab710c11edb225997b1c36963d6c2efec8",
+      "results/verification.json": "9b8e11d18c89c2da57de2f6109f4bbb5244685bf8106dee47492831ef5c55822"
+    }
+  }
+}

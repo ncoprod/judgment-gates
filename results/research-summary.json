@@ -1,0 +1,3739 @@
+{
+  "book_verification": {
+    "compared": 26525,
+    "error_count": 0,
+    "passed": true
+  },
+  "code_verification": {
+    "passed": true,
+    "tests_passed": 58
+  },
+  "deadlines": {
+    "local": {
+      "binance/BTC/classifier": {
+        "1000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        },
+        "15000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        }
+      },
+      "binance/BTC/rules": {
+        "1000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        },
+        "15000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        }
+      },
+      "binance/ETH/classifier": {
+        "1000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        },
+        "15000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        }
+      },
+      "binance/ETH/rules": {
+        "1000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        },
+        "15000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        }
+      },
+      "hyperliquid/BTC/classifier": {
+        "1000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        },
+        "15000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        }
+      },
+      "hyperliquid/BTC/rules": {
+        "1000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        },
+        "15000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        }
+      },
+      "hyperliquid/ETH/classifier": {
+        "1000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        },
+        "15000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        }
+      },
+      "hyperliquid/ETH/rules": {
+        "1000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        },
+        "15000": {
+          "attempted": 2000,
+          "ci": null,
+          "met": 2000,
+          "reason": "one local benchmark burst; independent block times unavailable"
+        }
+      }
+    },
+    "remote": {
+      "results/nim-low-calls.json:deepseek-ai/deepseek-v4.1-flash": {
+        "1000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 3,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        },
+        "15000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 3,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        }
+      },
+      "results/nim-low-calls.json:nvidia/nemotron-3-ultra-550b-a55b": {
+        "1000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 9,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        },
+        "15000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 9,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        }
+      },
+      "results/nim-low-calls.json:openai/gpt-oss-20b": {
+        "1000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 31,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        },
+        "15000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.41935483870967744,
+          "met": 13,
+          "n": 31,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        }
+      },
+      "results/nim-low-calls.json:z-ai/glm-5.3-flash": {
+        "1000": {
+          "block": "hour",
+          "blocks": 2,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 3,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        },
+        "15000": {
+          "block": "hour",
+          "blocks": 2,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 3,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        }
+      },
+      "results/opencode-calls.json:opencode/deepseek-v4.1-flash-free": {
+        "1000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 30,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        },
+        "15000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 30,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        }
+      },
+      "results/opencode-calls.json:opencode/glm-5.3-flash-free": {
+        "1000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 56,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        },
+        "15000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.32142857142857145,
+          "met": 18,
+          "n": 56,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        }
+      },
+      "results/opencode-refresh-calls.json:opencode/deepseek-v4.1-flash-free": {
+        "1000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 1,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        },
+        "15000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 1,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        }
+      },
+      "results/opencode-refresh-calls.json:opencode/glm-5.3-flash-free": {
+        "1000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 1,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        },
+        "15000": {
+          "block": "hour",
+          "blocks": 1,
+          "ci": null,
+          "mean": 0.0,
+          "met": 0,
+          "n": 1,
+          "reason": "fewer than five UTC blocks; precision is not established"
+        }
+      }
+    }
+  },
+  "jev_preflight": {
+    "http_status": 403,
+    "latency_ms": 916.19,
+    "model": "typesafe-ai/jev",
+    "route": "Vercel AI Gateway (not native provider latency)",
+    "status": "failed"
+  },
+  "markets": {
+    "binance/BTC": {
+      "classifier_minus_rules_brier": {
+        "block": "hour",
+        "blocks": 1,
+        "ci": null,
+        "mean": 0.06750844685032496,
+        "n": 153,
+        "reason": "fewer than five UTC blocks; precision is not established"
+      },
+      "isotonic_labels": 98,
+      "labels": 609,
+      "local": {
+        "classifier": {
+          "calibration": {
+            "brier": 0.3188096119664646,
+            "ece": 0.3370830199357088,
+            "n": 153,
+            "prevalence": 0.2679738562091503,
+            "reliability": [
+              {
+                "frequency": null,
+                "lower": 0.0,
+                "n": 0,
+                "probability": null,
+                "upper": 0.1
+              },
+              {
+                "frequency": null,
+                "lower": 0.1,
+                "n": 0,
+                "probability": null,
+                "upper": 0.2
+              },
+              {
+                "frequency": null,
+                "lower": 0.2,
+                "n": 0,
+                "probability": null,
+                "upper": 0.3
+              },
+              {
+                "frequency": null,
+                "lower": 0.3,
+                "n": 0,
+                "probability": null,
+                "upper": 0.4
+              },
+              {
+                "frequency": null,
+                "lower": 0.4,
+                "n": 0,
+                "probability": null,
+                "upper": 0.5
+              },
+              {
+                "frequency": 0.26865671641791045,
+                "lower": 0.5,
+                "n": 67,
+                "probability": 0.5322508064017892,
+                "upper": 0.6
+              },
+              {
+                "frequency": 0.3181818181818182,
+                "lower": 0.6,
+                "n": 66,
+                "probability": 0.642619666988539,
+                "upper": 0.7
+              },
+              {
+                "frequency": 0.1,
+                "lower": 0.7,
+                "n": 20,
+                "probability": 0.7249999999999999,
+                "upper": 0.8
+              },
+              {
+                "frequency": null,
+                "lower": 0.8,
+                "n": 0,
+                "probability": null,
+                "upper": 0.9
+              },
+              {
+                "frequency": null,
+                "lower": 0.9,
+                "n": 0,
+                "probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "latency": {
+            "n": 2000,
+            "p50_ms": 0.002583,
+            "p99_ms": 0.018134829999999953
+          }
+        },
+        "rules": {
+          "calibration": {
+            "brier": 0.25130116511613965,
+            "ece": 0.24819398419389338,
+            "n": 153,
+            "prevalence": 0.2679738562091503,
+            "reliability": [
+              {
+                "frequency": null,
+                "lower": 0.0,
+                "n": 0,
+                "probability": null,
+                "upper": 0.1
+              },
+              {
+                "frequency": 1.0,
+                "lower": 0.1,
+                "n": 2,
+                "probability": 0.19552544725315085,
+                "upper": 0.2
+              },
+              {
+                "frequency": 0.5,
+                "lower": 0.2,
+                "n": 14,
+                "probability": 0.25514695777022484,
+                "upper": 0.3
+              },
+              {
+                "frequency": 0.1875,
+                "lower": 0.3,
+                "n": 32,
+                "probability": 0.35494877545441306,
+                "upper": 0.4
+              },
+              {
+                "frequency": 0.20833333333333334,
+                "lower": 0.4,
+                "n": 48,
+                "probability": 0.45740045579054467,
+                "upper": 0.5
+              },
+              {
+                "frequency": 0.2857142857142857,
+                "lower": 0.5,
+                "n": 49,
+                "probability": 0.5406172107015366,
+                "upper": 0.6
+              },
+              {
+                "frequency": 0.25,
+                "lower": 0.6,
+                "n": 8,
+                "probability": 0.6416202335115604,
+                "upper": 0.7
+              },
+              {
+                "frequency": null,
+                "lower": 0.7,
+                "n": 0,
+                "probability": null,
+                "upper": 0.8
+              },
+              {
+                "frequency": null,
+                "lower": 0.8,
+                "n": 0,
+                "probability": null,
+                "upper": 0.9
+              },
+              {
+                "frequency": null,
+                "lower": 0.9,
+                "n": 0,
+                "probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "latency": {
+            "n": 2000,
+            "p50_ms": 0.000292,
+            "p99_ms": 0.000542
+          }
+        }
+      },
+      "replay": {
+        "classifier": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 153,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 153,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "classifier+abstain": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 153,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 153,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "rules": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 153,
+            "decomposition_residual_usd": -4.068967385251199e-14,
+            "fees_usd": 0.06415228,
+            "fill_events": 4,
+            "fill_rate": 0.020833333333333332,
+            "flatten_fee_usd": 0.08017035,
+            "inventory_usd": -0.09419999999999712,
+            "markouts_bp": {
+              "1": {
+                "censored": 1,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -0.3906317148387479,
+                  "n": 3,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -0.3906317148387479,
+                  "n": 3,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.009400000000008731
+              },
+              "10": {
+                "censored": 1,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -0.4820423611936393,
+                  "n": 3,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -0.4820423611936393,
+                  "n": 3,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.011600000000005821
+              },
+              "60": {
+                "censored": 3,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -1.047178508407501,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -1.047178508407501,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.008400000000008732
+              }
+            },
+            "pnl_after_flatten_fee_usd": -0.2292226300000349,
+            "pnl_usd": -0.1490522800000349,
+            "pre_entry_trades": 118,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.009300000000002912,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 153,
+            "decomposition_residual_usd": -4.068967385251199e-14,
+            "fees_usd": 0.06415228,
+            "fill_events": 4,
+            "fill_rate": 0.020833333333333332,
+            "flatten_fee_usd": 0.08017035,
+            "inventory_usd": -0.0885999999999913,
+            "markouts_bp": {
+              "1": {
+                "censored": 1,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -0.15792712036626888,
+                  "n": 3,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -0.15792712036626888,
+                  "n": 3,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.0038000000000029113
+              },
+              "10": {
+                "censored": 1,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -0.24933776672116034,
+                  "n": 3,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -0.24933776672116034,
+                  "n": 3,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.005999999999999998
+              },
+              "60": {
+                "censored": 3,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -0.34908387301113025,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -0.34908387301113025,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.0028000000000029104
+              }
+            },
+            "pnl_after_flatten_fee_usd": -0.2292226300000349,
+            "pnl_usd": -0.1490522800000349,
+            "pre_entry_trades": 118,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0036999999999970897,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "rules+abstain": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 153,
+            "decomposition_residual_usd": 9.020562075079397e-16,
+            "fees_usd": 0.0160376,
+            "fill_events": 1,
+            "fill_rate": 0.25,
+            "flatten_fee_usd": 0.040085175,
+            "inventory_usd": -0.02569999999999708,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -1.0474331341766496,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -1.0474331341766496,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.008400000000008732
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -2.718338372027414,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -2.718338372027414,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.02180000000000291
+              },
+              "60": {
+                "censored": 1,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": -0.07377277499999327,
+            "pnl_usd": -0.03368759999999327,
+            "pre_entry_trades": 2,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.00805000000000291,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 153,
+            "decomposition_residual_usd": 9.020562075079397e-16,
+            "fees_usd": 0.0160376,
+            "fill_events": 1,
+            "fill_rate": 0.25,
+            "flatten_fee_usd": 0.040085175,
+            "inventory_usd": -0.02569999999999708,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -1.0474331341766496,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -1.0474331341766496,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.008400000000008732
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -2.718338372027414,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -2.718338372027414,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.02180000000000291
+              },
+              "60": {
+                "censored": 1,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": -0.07377277499999327,
+            "pnl_usd": -0.03368759999999327,
+            "pre_entry_trades": 2,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.00805000000000291,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        }
+      },
+      "splits": {
+        "pilot": 153,
+        "train": 294,
+        "validation": 142
+      }
+    },
+    "binance/ETH": {
+      "classifier_minus_rules_brier": {
+        "block": "hour",
+        "blocks": 1,
+        "ci": null,
+        "mean": 0.1282794959666084,
+        "n": 158,
+        "reason": "fewer than five UTC blocks; precision is not established"
+      },
+      "isotonic_labels": 102,
+      "labels": 632,
+      "local": {
+        "classifier": {
+          "calibration": {
+            "brier": 0.38024922008524115,
+            "ece": 0.3631225066095037,
+            "n": 158,
+            "prevalence": 0.46835443037974683,
+            "reliability": [
+              {
+                "frequency": null,
+                "lower": 0.0,
+                "n": 0,
+                "probability": null,
+                "upper": 0.1
+              },
+              {
+                "frequency": null,
+                "lower": 0.1,
+                "n": 0,
+                "probability": null,
+                "upper": 0.2
+              },
+              {
+                "frequency": null,
+                "lower": 0.2,
+                "n": 0,
+                "probability": null,
+                "upper": 0.3
+              },
+              {
+                "frequency": null,
+                "lower": 0.3,
+                "n": 0,
+                "probability": null,
+                "upper": 0.4
+              },
+              {
+                "frequency": null,
+                "lower": 0.4,
+                "n": 0,
+                "probability": null,
+                "upper": 0.5
+              },
+              {
+                "frequency": null,
+                "lower": 0.5,
+                "n": 0,
+                "probability": null,
+                "upper": 0.6
+              },
+              {
+                "frequency": null,
+                "lower": 0.6,
+                "n": 0,
+                "probability": null,
+                "upper": 0.7
+              },
+              {
+                "frequency": null,
+                "lower": 0.7,
+                "n": 0,
+                "probability": null,
+                "upper": 0.8
+              },
+              {
+                "frequency": 0.46835443037974683,
+                "lower": 0.8,
+                "n": 158,
+                "probability": 0.8314769369892505,
+                "upper": 0.9
+              },
+              {
+                "frequency": null,
+                "lower": 0.9,
+                "n": 0,
+                "probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "latency": {
+            "n": 2000,
+            "p50_ms": 0.002541,
+            "p99_ms": 0.006752089999999998
+          }
+        },
+        "rules": {
+          "calibration": {
+            "brier": 0.25196972411863267,
+            "ece": 0.09447547287251212,
+            "n": 158,
+            "prevalence": 0.46835443037974683,
+            "reliability": [
+              {
+                "frequency": null,
+                "lower": 0.0,
+                "n": 0,
+                "probability": null,
+                "upper": 0.1
+              },
+              {
+                "frequency": null,
+                "lower": 0.1,
+                "n": 0,
+                "probability": null,
+                "upper": 0.2
+              },
+              {
+                "frequency": 0.3333333333333333,
+                "lower": 0.2,
+                "n": 21,
+                "probability": 0.25733305650879246,
+                "upper": 0.3
+              },
+              {
+                "frequency": 0.463768115942029,
+                "lower": 0.3,
+                "n": 69,
+                "probability": 0.34478852119644293,
+                "upper": 0.4
+              },
+              {
+                "frequency": 0.46808510638297873,
+                "lower": 0.4,
+                "n": 47,
+                "probability": 0.44716431459752154,
+                "upper": 0.5
+              },
+              {
+                "frequency": 0.7058823529411765,
+                "lower": 0.5,
+                "n": 17,
+                "probability": 0.5521260594753898,
+                "upper": 0.6
+              },
+              {
+                "frequency": 0.25,
+                "lower": 0.6,
+                "n": 4,
+                "probability": 0.6310981650653145,
+                "upper": 0.7
+              },
+              {
+                "frequency": null,
+                "lower": 0.7,
+                "n": 0,
+                "probability": null,
+                "upper": 0.8
+              },
+              {
+                "frequency": null,
+                "lower": 0.8,
+                "n": 0,
+                "probability": null,
+                "upper": 0.9
+              },
+              {
+                "frequency": null,
+                "lower": 0.9,
+                "n": 0,
+                "probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "latency": {
+            "n": 2000,
+            "p50_ms": 0.000292,
+            "p99_ms": 0.000625
+          }
+        }
+      },
+      "replay": {
+        "classifier": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 158,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 158,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "classifier+abstain": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 158,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 158,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "rules": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 158,
+            "decomposition_residual_usd": -4.484260185400046e-16,
+            "fees_usd": 0.004642800000000001,
+            "fill_events": 1,
+            "fill_rate": 0.0036496350364963502,
+            "flatten_fee_usd": 0.011608924999999999,
+            "inventory_usd": 0.0030000000000018194,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -1.0338210240418602,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -1.0338210240418602,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.002399999999997817
+              },
+              "10": {
+                "censored": 1,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 1,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": -0.012401725000002813,
+            "pnl_usd": -0.0007928000000028135,
+            "pre_entry_trades": 60,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0008499999999958163,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 158,
+            "decomposition_residual_usd": -4.484260185400046e-16,
+            "fees_usd": 0.004642800000000001,
+            "fill_events": 1,
+            "fill_rate": 0.0036496350364963502,
+            "flatten_fee_usd": 0.011608924999999999,
+            "inventory_usd": 0.0030000000000018194,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -1.0338210240418602,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 1,
+                  "ci": null,
+                  "mean": -1.0338210240418602,
+                  "n": 1,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": -0.002399999999997817
+              },
+              "10": {
+                "censored": 1,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 1,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": -0.012401725000002813,
+            "pnl_usd": -0.0007928000000028135,
+            "pre_entry_trades": 60,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0008499999999958163,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "rules+abstain": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 158,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 158,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        }
+      },
+      "splits": {
+        "pilot": 158,
+        "train": 306,
+        "validation": 148
+      }
+    },
+    "hyperliquid/BTC": {
+      "classifier_minus_rules_brier": {
+        "block": "hour",
+        "blocks": 1,
+        "ci": null,
+        "mean": -0.012025905035986308,
+        "n": 76,
+        "reason": "fewer than five UTC blocks; precision is not established"
+      },
+      "isotonic_labels": 48,
+      "labels": 301,
+      "local": {
+        "classifier": {
+          "calibration": {
+            "brier": 0.16711282667259594,
+            "ece": 0.09077311808252339,
+            "n": 76,
+            "prevalence": 0.19736842105263158,
+            "reliability": [
+              {
+                "frequency": null,
+                "lower": 0.0,
+                "n": 0,
+                "probability": null,
+                "upper": 0.1
+              },
+              {
+                "frequency": null,
+                "lower": 0.1,
+                "n": 0,
+                "probability": null,
+                "upper": 0.2
+              },
+              {
+                "frequency": 0.16363636363636364,
+                "lower": 0.2,
+                "n": 55,
+                "probability": 0.2666906862455008,
+                "upper": 0.3
+              },
+              {
+                "frequency": 0.2857142857142857,
+                "lower": 0.3,
+                "n": 21,
+                "probability": 0.34432234432234443,
+                "upper": 0.4
+              },
+              {
+                "frequency": null,
+                "lower": 0.4,
+                "n": 0,
+                "probability": null,
+                "upper": 0.5
+              },
+              {
+                "frequency": null,
+                "lower": 0.5,
+                "n": 0,
+                "probability": null,
+                "upper": 0.6
+              },
+              {
+                "frequency": null,
+                "lower": 0.6,
+                "n": 0,
+                "probability": null,
+                "upper": 0.7
+              },
+              {
+                "frequency": null,
+                "lower": 0.7,
+                "n": 0,
+                "probability": null,
+                "upper": 0.8
+              },
+              {
+                "frequency": null,
+                "lower": 0.8,
+                "n": 0,
+                "probability": null,
+                "upper": 0.9
+              },
+              {
+                "frequency": null,
+                "lower": 0.9,
+                "n": 0,
+                "probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "latency": {
+            "n": 2000,
+            "p50_ms": 0.002375,
+            "p99_ms": 0.00275
+          }
+        },
+        "rules": {
+          "calibration": {
+            "brier": 0.1791387317085822,
+            "ece": 0.14049506898663391,
+            "n": 76,
+            "prevalence": 0.19736842105263158,
+            "reliability": [
+              {
+                "frequency": null,
+                "lower": 0.0,
+                "n": 0,
+                "probability": null,
+                "upper": 0.1
+              },
+              {
+                "frequency": 0.25,
+                "lower": 0.1,
+                "n": 12,
+                "probability": 0.18228554151219212,
+                "upper": 0.2
+              },
+              {
+                "frequency": 0.15789473684210525,
+                "lower": 0.2,
+                "n": 19,
+                "probability": 0.26864469576403577,
+                "upper": 0.3
+              },
+              {
+                "frequency": 0.1794871794871795,
+                "lower": 0.3,
+                "n": 39,
+                "probability": 0.3594298331354609,
+                "upper": 0.4
+              },
+              {
+                "frequency": 0.4,
+                "lower": 0.4,
+                "n": 5,
+                "probability": 0.4213613679610896,
+                "upper": 0.5
+              },
+              {
+                "frequency": null,
+                "lower": 0.5,
+                "n": 0,
+                "probability": null,
+                "upper": 0.6
+              },
+              {
+                "frequency": 0.0,
+                "lower": 0.6,
+                "n": 1,
+                "probability": 0.6362321895253791,
+                "upper": 0.7
+              },
+              {
+                "frequency": null,
+                "lower": 0.7,
+                "n": 0,
+                "probability": null,
+                "upper": 0.8
+              },
+              {
+                "frequency": null,
+                "lower": 0.8,
+                "n": 0,
+                "probability": null,
+                "upper": 0.9
+              },
+              {
+                "frequency": null,
+                "lower": 0.9,
+                "n": 0,
+                "probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "latency": {
+            "n": 2000,
+            "p50_ms": 0.000292,
+            "p99_ms": 0.0005004199999999996
+          }
+        }
+      },
+      "replay": {
+        "classifier": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 76,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 76,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "classifier+abstain": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 76,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 76,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "rules": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 76,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 76,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "rules+abstain": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 76,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 76,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        }
+      },
+      "splits": {
+        "pilot": 76,
+        "train": 144,
+        "validation": 71
+      }
+    },
+    "hyperliquid/ETH": {
+      "classifier_minus_rules_brier": {
+        "block": "hour",
+        "blocks": 1,
+        "ci": null,
+        "mean": 0.09110850430128263,
+        "n": 56,
+        "reason": "fewer than five UTC blocks; precision is not established"
+      },
+      "isotonic_labels": 36,
+      "labels": 223,
+      "local": {
+        "classifier": {
+          "calibration": {
+            "brier": 0.3347459680350177,
+            "ece": 0.3122986036519869,
+            "n": 56,
+            "prevalence": 0.375,
+            "reliability": [
+              {
+                "frequency": null,
+                "lower": 0.0,
+                "n": 0,
+                "probability": null,
+                "upper": 0.1
+              },
+              {
+                "frequency": null,
+                "lower": 0.1,
+                "n": 0,
+                "probability": null,
+                "upper": 0.2
+              },
+              {
+                "frequency": null,
+                "lower": 0.2,
+                "n": 0,
+                "probability": null,
+                "upper": 0.3
+              },
+              {
+                "frequency": null,
+                "lower": 0.3,
+                "n": 0,
+                "probability": null,
+                "upper": 0.4
+              },
+              {
+                "frequency": null,
+                "lower": 0.4,
+                "n": 0,
+                "probability": null,
+                "upper": 0.5
+              },
+              {
+                "frequency": null,
+                "lower": 0.5,
+                "n": 0,
+                "probability": null,
+                "upper": 0.6
+              },
+              {
+                "frequency": 0.38181818181818183,
+                "lower": 0.6,
+                "n": 55,
+                "probability": 0.6842105263157893,
+                "upper": 0.7
+              },
+              {
+                "frequency": null,
+                "lower": 0.7,
+                "n": 0,
+                "probability": null,
+                "upper": 0.8
+              },
+              {
+                "frequency": 0.0,
+                "lower": 0.8,
+                "n": 1,
+                "probability": 0.8571428571428571,
+                "upper": 0.9
+              },
+              {
+                "frequency": null,
+                "lower": 0.9,
+                "n": 0,
+                "probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "latency": {
+            "n": 2000,
+            "p50_ms": 0.002292,
+            "p99_ms": 0.002917
+          }
+        },
+        "rules": {
+          "calibration": {
+            "brier": 0.2436374637337351,
+            "ece": 0.19140941343590281,
+            "n": 56,
+            "prevalence": 0.375,
+            "reliability": [
+              {
+                "frequency": null,
+                "lower": 0.0,
+                "n": 0,
+                "probability": null,
+                "upper": 0.1
+              },
+              {
+                "frequency": 0.0,
+                "lower": 0.1,
+                "n": 10,
+                "probability": 0.17657229918264866,
+                "upper": 0.2
+              },
+              {
+                "frequency": 0.52,
+                "lower": 0.2,
+                "n": 25,
+                "probability": 0.25602320382352245,
+                "upper": 0.3
+              },
+              {
+                "frequency": 0.4117647058823529,
+                "lower": 0.3,
+                "n": 17,
+                "probability": 0.33785176042309784,
+                "upper": 0.4
+              },
+              {
+                "frequency": null,
+                "lower": 0.4,
+                "n": 0,
+                "probability": null,
+                "upper": 0.5
+              },
+              {
+                "frequency": 0.25,
+                "lower": 0.5,
+                "n": 4,
+                "probability": 0.5243160458411986,
+                "upper": 0.6
+              },
+              {
+                "frequency": null,
+                "lower": 0.6,
+                "n": 0,
+                "probability": null,
+                "upper": 0.7
+              },
+              {
+                "frequency": null,
+                "lower": 0.7,
+                "n": 0,
+                "probability": null,
+                "upper": 0.8
+              },
+              {
+                "frequency": null,
+                "lower": 0.8,
+                "n": 0,
+                "probability": null,
+                "upper": 0.9
+              },
+              {
+                "frequency": null,
+                "lower": 0.9,
+                "n": 0,
+                "probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "latency": {
+            "n": 2000,
+            "p50_ms": 0.00025,
+            "p99_ms": 0.000375
+          }
+        }
+      },
+      "replay": {
+        "classifier": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 56,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 56,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "classifier+abstain": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 56,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 56,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "rules": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 56,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 56,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        },
+        "rules+abstain": {
+          "optimistic": {
+            "busy_holds": 0,
+            "decisions": 56,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          },
+          "pessimistic": {
+            "busy_holds": 0,
+            "decisions": 56,
+            "decomposition_residual_usd": 0.0,
+            "fees_usd": 0.0,
+            "fill_events": 0,
+            "fill_rate": 0.0,
+            "flatten_fee_usd": 0.0,
+            "inventory_usd": 0.0,
+            "markouts_bp": {
+              "1": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "10": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              },
+              "60": {
+                "censored": 0,
+                "day": {
+                  "block": "day",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "hour": {
+                  "block": "hour",
+                  "blocks": 0,
+                  "ci": null,
+                  "mean": null,
+                  "n": 0,
+                  "reason": "fewer than five UTC blocks; precision is not established"
+                },
+                "signed_future_move_usd": 0.0
+              }
+            },
+            "pnl_after_flatten_fee_usd": 0.0,
+            "pnl_usd": 0.0,
+            "pre_entry_trades": 0,
+            "rejected_post_only": 0,
+            "spread_capture_usd": 0.0,
+            "stale_holds": 0,
+            "unknown_queue_holds": 0,
+            "unknown_trade_order": 0
+          }
+        }
+      },
+      "splits": {
+        "pilot": 56,
+        "train": 108,
+        "validation": 51
+      }
+    }
+  },
+  "markout_precision": {
+    "cases": 96,
+    "max_day_blocks": 1,
+    "min_day_blocks": 0,
+    "reason": "Overlapping labels/fills cannot replace independent UTC days. Zero-fill variants have no markout mean; final scorer remains reserved until the registered end.",
+    "required_test_days": 5,
+    "scope": "development cases, not a held-out test evaluation",
+    "supported_day_CIs": 0,
+    "target_half_width_bp": 1,
+    "target_status": "not_established",
+    "test_half_width_bp": null
+  },
+  "provenance": {
+    "command": "uv run python scripts/export_public.py TARGET",
+    "model_revision": "frozen local fits; hosted aliases not immutable",
+    "scope": "author-computed aggregates; no observations, responses or personal metadata",
+    "seed": 42,
+    "source_commit": "8b687f36cb4c89d4f621c27369e9d456fdcaba22",
+    "source_sha256": {
+      "results/deadlines.json": "85db0ad1e71e66a6256775a685c8d256af157dd70c18c1672df4a77904290a92",
+      "results/evidence-status.json": "0118960a83451cb0ae6431e95de0a89d320b801acd55313df73075cfc0b76db0",
+      "results/expanded-cohort.json": "6149a258cf6f38ac231b6fa3850358c007a6d5bb29f7b04b534145cd73398831",
+      "results/expanded-verify.json": "b571a28b97a0b9a63684c1174916754d0138b1689252be2e245eda8718891c0e",
+      "results/forward-diagnostics.json": "114a56775e5bd3290ba1eff07205b577655bd79f230603fd02178ca9914cdd06",
+      "results/jev-evaluate-probe.json": "b5d005126e272cbf3e3a51cf59f81d7c9eda2c2567b2fa25280f1555091bb35c",
+      "results/licenses.json": "909bca2365f4409667f94212a14bf47577887cdb352802290aef499421b7c444",
+      "results/nim-low-analysis.json": "3354755187e6dbca76e3431445727f1beb06a6f18b5a3f873add31d4e3894df5",
+      "results/nim-tilt-analysis.json": "16ded572f8abff242bbcf10244b6cb32f3ebcdaf1158f884ad4eea5616288181",
+      "results/opencode-analysis.json": "d87b75e33566c07daeb68bb719476a634048cc45cc553bd735877160fae28e63",
+      "results/review-offline.json": "ff9b1e3f409c5fd4c12a7d3c94f1ecb3a40bed8a90847bea3b7f8003b5ec81dc",
+      "results/review-pilot.json": "286e5c2d770298f701522686b973192877a2b30dbe8b1a255ea208e2695a92e9",
+      "results/tilt-model-licenses.json": "89dc158e9d359cd12a028a1b007137ab710c11edb225997b1c36963d6c2efec8",
+      "results/verification.json": "9b8e11d18c89c2da57de2f6109f4bbb5244685bf8106dee47492831ef5c55822"
+    }
+  },
+  "remote_latency": {
+    "deepseek-ai/deepseek-v4.1-flash": {
+      "failed": 3,
+      "latency": {
+        "n": 0,
+        "p50_ms": null,
+        "p99_ms": null
+      }
+    },
+    "nvidia/nemotron-3-ultra-550b-a55b": {
+      "failed": 4,
+      "latency": {
+        "n": 5,
+        "p50_ms": 32264.929834,
+        "p99_ms": 51028.76746864
+      }
+    },
+    "openai/gpt-oss-20b": {
+      "failed": 5,
+      "latency": {
+        "n": 26,
+        "p50_ms": 16387.202354,
+        "p99_ms": 124343.270333
+      }
+    },
+    "opencode/deepseek-v4.1-flash-free": {
+      "failed": 30,
+      "latency": {
+        "n": 0,
+        "p50_ms": null,
+        "p99_ms": null
+      }
+    },
+    "opencode/glm-5.3-flash-free": {
+      "failed": 36,
+      "latency": {
+        "n": 20,
+        "p50_ms": 7158.907874500001,
+        "p99_ms": 21934.940421249998
+      }
+    },
+    "z-ai/glm-5.3-flash": {
+      "failed": 3,
+      "latency": {
+        "n": 0,
+        "p50_ms": null,
+        "p99_ms": null
+      }
+    }
+  }
+}

@@ -165,22 +165,106 @@ def test_full_coverage_metrics_and_primary_family(cohort):
         assert paired["coverage_eligible"] is False
 
 
-def test_public_export_has_no_history_or_empirical_material(tmp_path):
+def export_module():
+    """Load the standalone publication script for boundary tests."""
     import importlib.util
-    from pathlib import Path
 
-    if not Path(".git").exists():
-        pytest.skip("export-history boundary requires the private source checkout")
     spec = importlib.util.spec_from_file_location("export_public", "scripts/export_public.py")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
+    return module
+
+
+def test_public_export_contains_paper_and_only_aggregate_results(tmp_path):
+    from pathlib import Path
+
+    if not Path("results/review-offline.json").exists():
+        pytest.skip("publication integration requires the private source checkout")
+    module = export_module()
     target = tmp_path / "export"
     manifest = module.export(target)
     names = {str(p.relative_to(target)) for p in target.rglob("*") if p.is_file()}
-    assert not any(n.startswith(("results/", "paper/", "configs/", ".git/")) for n in names)
+    assert {n for n in names if n.startswith("results/")} == set(module.RESULTS)
+    assert {"paper/main.pdf", "paper/main.tex", "paper/refs.bib"} <= names
+    assert not any(n.startswith(("configs/", ".git/", "runs/")) for n in names)
+    assert not any(n.endswith("-calls.json") for n in names)
     assert "REVIEW_ASTRA.md" not in names
     assert "LICENSE" in names and "src/judgment_gates/engine.py" in manifest["files"]
     assert not (target / ".git").exists()
-    assert Path(target / "README.md").is_file()
+    assert manifest["checked_local_links"] > 0
+    forbidden = {
+        "raw_response",
+        "request",
+        "calls",
+        "samples_ms",
+        "states",
+        "features",
+        "fills",
+        "equity",
+        "coefficients",
+        "git_status",
+    }
+
+    def check(value):
+        if isinstance(value, dict):
+            assert not forbidden.intersection(value)
+            for child in value.values():
+                check(child)
+        elif isinstance(value, list):
+            for child in value:
+                check(child)
+        elif isinstance(value, str):
+            assert "/Users/" not in value
+
+    for name in module.RESULTS:
+        check(json.loads((target / name).read_text()))
     with pytest.raises(FileExistsError):
         module.export(target)
+
+
+def test_public_projection_drops_unrecognised_and_individual_fields():
+    module = export_module()
+    row = {
+        "status": "ok",
+        "raw_response": "private output",
+        "future_field": "private",
+        "latency": {"p50_ms": 12, "samples_ms": [10, 14]},
+        "tilt": {
+            "drawdown": {
+                "signed_probability_shift": {
+                    "mean": 0.1,
+                    "observations": [0.1],
+                    "paired_state_bootstrap": {"ci": [0, 0.2], "states": ["private"]},
+                }
+            }
+        },
+    }
+    result = module.model_summary(row)
+    assert result["latency"] == {"p50_ms": 12}
+    assert "raw_response" not in result and "future_field" not in result
+    assert result["tilt"]["drawdown"]["signed_probability_shift"] == {
+        "mean": 0.1,
+        "paired_state_bootstrap": {"ci": [0, 0.2]},
+    }
+
+
+def test_public_links_must_exist_and_stay_inside_export(tmp_path):
+    module = export_module()
+    root = tmp_path / "export"
+    root.mkdir()
+    readme = root / "README.md"
+    readme.write_text("[missing](paper/main.pdf)")
+    with pytest.raises(ValueError):
+        module.check_links(root)
+    (root / "paper").mkdir()
+    (root / "paper/main.pdf").write_bytes(b"fixture")
+    assert module.check_links(root) == 1
+    outside = tmp_path / "private.txt"
+    outside.write_text("fixture")
+    readme.write_text("[escape](../private.txt)")
+    with pytest.raises(ValueError):
+        module.check_links(root)
+    readme.write_text("[external](https://example.org/terms)")
+    (root / "paper/main.tex").write_text(r"\input{generated/missing}")
+    with pytest.raises(ValueError):
+        module.check_links(root)

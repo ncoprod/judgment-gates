@@ -1,0 +1,28 @@
+{
+  "inputs": {
+    "results/forward-diagnostics.json": "c54381308020c2d8ce3d0883d92abc9359d75ac8a1acb47c14c4c432494b7994",
+    "results/framing-summary.json": "c117029a9c4eb7168476752c79f23890a4434a646cdb4c989b94e17657e0ad01",
+    "results/licenses.json": "79ca2ada9195abf6e81aa8d84b2da16aa78841f81f463fadc83a363067544c8f",
+    "results/research-summary.json": "68df6fbb51d6d5d4208f462ba1541342da4b39601f393cb6df78cb70faff630e",
+    "results/tilt-model-licenses.json": "26a7abe7a4188217a9dc6a280088d3e80e9f3e3f80b16208b47fc2dfd1186474"
+  },
+  "outputs": {
+    "calibration.tex": "98ad704d0c3510dfccbf61c1e426690a399a808ebef4b7963f0e718da5742968",
+    "data.tex": "274eaf96090e1c59b180bbabfaa5f2bda6cd54593c437b73436fe06ce7cefc70",
+    "forward.tex": "f8e8636811a6fa733c5094028706ca10f510ba00c5ea96c03bb3117d81595885",
+    "framing_contexts.tex": "81ce4d639c8c1ac20ca6ef35ad4241591123fad834b26db05dc19b5ffc578dbc",
+    "framing_extension.tex": "425f6abb1b400b79792a5c92fbb72ce334cca8346bf3c355e865922b0e8e14f0",
+    "latency.pdf": "38ea6a69511775214387b37646396c3c3267c16b15d6a8c1af19cffa94bf8c1b",
+    "markouts.tex": "8dde406f6bd2e2f1ed0f25e3834d8aa3c1d1e2d87749d3383f23598fc3cbaf4f",
+    "numbers.tex": "5bc19883e1798ec3b480a393a2f3e34a42fffad32bb84260f8115d951f4c649a",
+    "pnl.tex": "ac7b1b478e99ac06d3cef58a728fbfcadc756d9d730d6a011fe6b1741fdf87cb",
+    "reliability.pdf": "182711050e4d70fc77819c6f8dd9e08c7dcf070e40bbd1e966c7e5dbac92d107",
+    "remote.tex": "63066c8173e94204e5fd80f93591836ce6a7206abf37b6819294bce4e4291dd5",
+    "remote_calibration.tex": "30f8a51e5ed5919ac17f0159f37cbe99e90bf98a534320661df238a999b5d86e",
+    "tilt.tex": "7bf1735df8d0766902c4d5e754431a3f897a8a657dabe40cd058a8b8670976b6",
+    "uncertainty.tex": "cc46a907575c80ed0fa8f05e7776f6056e73e34822415a4c7c18aa271b90abd9"
+  },
+  "private_generation_manifest_sha256": "15c19f72e14a14b0a185271cdc961b77c8410155e9db5e95a0ad5e738c255381",
+  "scope": "published aggregates and precomputed tables/figures; raw inputs remain private",
+  "source_commit": "8b687f36cb4c89d4f621c27369e9d456fdcaba22"
+}

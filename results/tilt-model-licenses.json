@@ -1,0 +1,54 @@
+{
+  "models": {
+    "MiniMaxAI/MiniMax-M3.1-Flash": {
+      "id": "MiniMaxAI/MiniMax-M3.1-Flash",
+      "licence": "other",
+      "licence_name": "minimax-community",
+      "licence_sha256": "8c4978e3e0fe0349ff929cc8450463cba3039c4c9fc144d8bd5382ab00df247a",
+      "licence_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/resolve/262ae6830934f3512211081b8a3f16425b93a239/LICENSE",
+      "revision": "262ae6830934f3512211081b8a3f16425b93a239",
+      "source": "https://huggingface.co/api/models/MiniMaxAI/MiniMax-M3.1-Flash"
+    },
+    "google/gemma-4-31B-it": {
+      "id": "google/gemma-4-31B-it",
+      "licence": "apache-2.0",
+      "licence_name": null,
+      "licence_sha256": "9698fcf0a1acf79e8f6763a25e2b905d2776e44cef7803ff6b9378137d7015ac",
+      "licence_url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+      "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+      "source": "https://huggingface.co/api/models/google/gemma-4-31B-it"
+    },
+    "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16": {
+      "id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "licence": "other",
+      "licence_name": "openmdw-1.1",
+      "licence_sha256": "d7c8a9e5d1896d0a9588319cc7b1433e64645ad6d9e55632c30b78d8c038c23b",
+      "licence_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16/resolve/a9904d24bcc1d289a1950fa9d2b978c47cf903b9/LICENSE",
+      "revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+      "source": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+    }
+  },
+  "provenance": {
+    "command": "uv run python scripts/export_public.py TARGET",
+    "model_revision": "frozen local fits; hosted aliases not immutable",
+    "scope": "author-computed aggregates; no observations, responses or personal metadata",
+    "seed": 42,
+    "source_commit": "8b687f36cb4c89d4f621c27369e9d456fdcaba22",
+    "source_sha256": {
+      "results/deadlines.json": "85db0ad1e71e66a6256775a685c8d256af157dd70c18c1672df4a77904290a92",
+      "results/evidence-status.json": "0118960a83451cb0ae6431e95de0a89d320b801acd55313df73075cfc0b76db0",
+      "results/expanded-cohort.json": "6149a258cf6f38ac231b6fa3850358c007a6d5bb29f7b04b534145cd73398831",
+      "results/expanded-verify.json": "b571a28b97a0b9a63684c1174916754d0138b1689252be2e245eda8718891c0e",
+      "results/forward-diagnostics.json": "114a56775e5bd3290ba1eff07205b577655bd79f230603fd02178ca9914cdd06",
+      "results/jev-evaluate-probe.json": "b5d005126e272cbf3e3a51cf59f81d7c9eda2c2567b2fa25280f1555091bb35c",
+      "results/licenses.json": "909bca2365f4409667f94212a14bf47577887cdb352802290aef499421b7c444",
+      "results/nim-low-analysis.json": "3354755187e6dbca76e3431445727f1beb06a6f18b5a3f873add31d4e3894df5",
+      "results/nim-tilt-analysis.json": "16ded572f8abff242bbcf10244b6cb32f3ebcdaf1158f884ad4eea5616288181",
+      "results/opencode-analysis.json": "d87b75e33566c07daeb68bb719476a634048cc45cc553bd735877160fae28e63",
+      "results/review-offline.json": "ff9b1e3f409c5fd4c12a7d3c94f1ecb3a40bed8a90847bea3b7f8003b5ec81dc",
+      "results/review-pilot.json": "286e5c2d770298f701522686b973192877a2b30dbe8b1a255ea208e2695a92e9",
+      "results/tilt-model-licenses.json": "89dc158e9d359cd12a028a1b007137ab710c11edb225997b1c36963d6c2efec8",
+      "results/verification.json": "9b8e11d18c89c2da57de2f6109f4bbb5244685bf8106dee47492831ef5c55822"
+    }
+  }
+}
