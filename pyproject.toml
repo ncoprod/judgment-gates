@@ -1,0 +1,32 @@
+[project]
+name = "judgment-gates"
+version = "0.1.0"
+description = "Latency-aware, calibrated judgment gates for paper market making"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+authors = [{name = "Nicolas Coquelet"}]
+dependencies = ["numpy>=2,<3", "scipy>=1.14,<2", "scikit-learn>=1.6,<2", "pyarrow>=20,<24", "httpx>=0.28,<1", "websockets>=15,<16"]
+
+[project.scripts]
+judgment-gates = "judgment_gates.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.10,<4",
+    "pytest>=8,<10",
+    "ruff>=0.11,<1",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
